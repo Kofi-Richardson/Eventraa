@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,700;1,300;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+       color: white;
+    
+}
+
+
+
+a{
+    text-decoration: none;
+
+}
+
+a:hover{
+    opacity: 0.7;
+}
+
+html{
+    background-color: #040b33;
+}
+
+
+header{
+    background-color: #040221;
+    padding: 12px;
+    position: fixed;
+    z-index: 1400;
+    width: 100%;
+    top: 0;
+    /* backdrop-filter: blur(25rem); */
+
+}
+
+#navigation
+{
+    display: flex;
+    align-items: center;
+    
+}
+
+#logo{
+    background-color: #ff0513;
+    padding: 5px;
+    border-radius: 4px;
+}
+#logo a:hover{
+    color: white;
+}
+#logo h2{
+    cursor: pointer;
+}
+
+.navitem ul
+{
+    list-style: none;
+    display:flex;
+    align-items: center;
+   
+}
+
+#log
+{
+    display: flex;
+    background-color: #ff0513;
+    
+}
+
+
+
+.navitem-container{
+    margin-left: auto;
+}
+
+.navitem ul li{
+    margin-right: 10px;
+}
+
+.navitem ul li a:focus{
+    /* background-color: #040b33; */
+    padding: 10px;
+    border-bottom: 2px solid #ff0513;
+}
+
+.navitem ul li a{
+    padding: 10px;
+}
+
+.navitem ul li a:hover{
+    /* background-color: #040b33; */
+    border-bottom: 2px solid #ff0513;
+}
+
+
+/* User dash */
+
+
+.userdash{
+    height: 50px;
+    width:150px;
+    margin-top: -7px;
+    position: absolute;
+    left: 89%;
+     display: flex;
+     justify-content: center;
+     text-align: center;
+}
+
+.dash-display{
+    background-color: #040221;
+    height: 40px;
+    width: 150px;
+    display: none;
+   
+}
+
+.dash-display ul a{
+    list-style: none;
+}
+
+
+
+
+
+
+ /* information display section  */
+
+ #welcomePanel{
+     background: url(images/Stream.jpg) no-repeat center;
+     height: 590px;
+     margin-top: 70px;
+     width: 100% 100%;
+     background-size: cover;
+     text-align: center;
+     position: relative;
+ }
+
+#welcometext {
+    position: absolute;
+    top: 6rem;
+    left: 24rem;
+    font-size: 32px;
+}
+
+#eventsearch{
+    width: 460px;
+    border: none;
+    outline: none;
+    color: rgb(54, 46, 46);
+    margin-left: 10px;
+}
+
+#searchbut{
+    margin-left: auto;
+    background-color:#ff0513;
+    border: none;
+    width: 45px;
+}
+
+#searchbut:hover{
+    background-color: #040b33;
+}
+
+#eventsearchbar{
+    position: absolute;
+    display: flex;
+    text-align: center;
+    background-color: white;
+    width: 500px;
+    top: 13rem;
+    left: 29rem;
+}
+
+#eventgh{
+    position: absolute;
+    top: 16rem;
+    left: 29.5rem;
+    
+}
+
+
+
+/* the second section  */
+
+.sectionHeaders
+{
+    text-align: center;
+    /* margin-top: 50px; */
+}
+
+.sectionHeaders button{
+    margin: 20px;
+    border: none;
+    border-bottom: 2px solid #ff0513;
+    padding: 12px;
+    background-color: transparent;
+    font-size: 24px;
+}
+.rows{
+    display: flex;
+    position: relative;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 20px;
+    
+}
+
+.grids
+{
+    margin: 50px;
+    font-weight: bold;
+    
+   
+   
+}
+
+#gridone{
+    text-align: center;
+    margin-left: 12px;
+}
+
+#gridone img{
+    height: 200px;
+}
+
+#succesStories{
+    /* margin-left: 100px;
+    margin-right: 100px; */
+    background-color: #040221;
+    
+}
+
+.Stories{
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    justify-content: center;
+    margin-top: 30px;
+    /* margin-left: 150px; */
+}
+
+.eventinfo{
+    width: 400px;
+    margin: 10px;
+}
+.eventinfo button{
+    margin: 20px;
+    border: none;
+    border-bottom: 2px solid #ff0513;
+    padding: 12px;
+    background-color: transparent;
+    font-size: px;
+}
+
+.eventimg{
+   background-color: #040b33;
+   padding: 30px;
+}
+
+
+
+
+/* Footer Styling  */
+
+#footerlogo{
+    padding: 20px;
+}
+#footerlogo button{
+    background-color: #ff0513;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#footerinfo{
+    
+    text-align: center;
+    background-color: #040221;
+    padding: 50px;
+    margin-top: 50px;
+    
+}
+
+.footernav{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.footernav li {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin: 10px;
+
+}
+
+hr{
+    height: 30px;
+    color: white;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid white;
+    background-color: #040221;
+    border-radius: 5px;
+   
+    
+}

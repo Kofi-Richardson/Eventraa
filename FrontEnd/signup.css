@@ -1,0 +1,160 @@
+#signup-dialogue {
+    background-color: white;
+    height: 710px;
+    margin: 90px;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-radius: 20px;
+    display: flex;
+    position: relative;
+}
+
+.signup-image {
+    background: url(../images/takepic.jpg);
+    background-size: cover;
+    width: 100% 100%;
+
+}
+
+.side-image {
+    display: flex;
+    flex-direction: column;
+    width: 527px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: relative;
+}
+
+#al-link {
+    color: white;
+}
+
+#as-link{
+    color:black;
+}
+
+#loginBut {
+    position: absolute;
+    top: 130px;
+    left: 450px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    background-color: transparent;
+    color: white;
+    height: 30px;
+    width: 80px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: none;
+    font-weight: bold;
+
+}
+
+#signupBut {
+    position: absolute;
+    top: 180px;
+    left: 450px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    background-color: white;
+    color: black;
+    height: 30px;
+    width: 80px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: none;
+    font-weight: bold;
+
+
+
+}
+
+
+.panel {
+    width: 527px;
+
+}
+
+.buttonBox {
+    text-align: center;
+    /* background-color: lightblue; */
+    padding: 20px;
+    border-top-right-radius: 20px;
+    color: black;
+
+}
+
+.buttonBox h1 {
+    color: black;
+}
+
+.buttonBox button h1 {
+    color: white;
+}
+
+.buttonBox button {
+    background-color: #ff0513;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+
+
+}
+
+#signup-form {
+    margin: 0 50px;
+
+}
+
+#password-error-check{
+    height: 30px;
+    width: 200px;
+    background-color: #f3f3f3;
+
+}
+
+.signup-input {
+    display: flex;
+    flex-direction: column;
+    margin: 1px auto;
+    color: black;
+
+}
+
+.signup-input input {
+    color: black;
+    outline: none;
+}
+
+.signup-input label {
+    color: #ff0513;
+    padding: 10px;
+    border-bottom: 1px solid #ff0513;
+    margin: 10px 0;
+    margin-right: auto;
+}
+
+.signup-input a {
+    color: black;
+    font-size: 12px;
+    color: #ff0513;
+}
+
+
+.signup-submit-button {
+    /* width: 527px; */
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+.Auth-Submit {
+    background-color: #ff0513;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}

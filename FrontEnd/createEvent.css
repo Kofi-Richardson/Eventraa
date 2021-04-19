@@ -1,0 +1,223 @@
+.create-event-content
+{
+    margin: 70px;
+    display: flex;
+    flex-direction: row;
+    color: #ff0513;
+}
+
+.create-event-aside{
+    width: 613px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+    height: 500px;
+    
+
+}
+.create-event-aside h1{
+    color: #ff0513;
+}
+
+.create-event-form{
+    margin: 20px;
+    width: 613px;
+}
+
+.event-name{
+    padding: 30px;
+    background-color: #040221;
+      border-radius:3px;
+}
+
+.event-name h3{
+    margin-top: 10px;
+}
+#event-title{
+    height: 30px;
+    
+}
+
+#event-speaker{
+    height: 30px;
+}
+
+#event-description{
+    margin-top:30px;
+}
+
+#event-speaker{
+    margin-top: 30px;
+}
+
+#event-title,#event-description,#event-speaker{
+    border: none;
+    border-bottom: 2px solid #ff0513;
+    background-color: transparent;
+    outline: none;
+    margin-top: 5px;
+    width: 500px;
+}
+
+/* Location */
+
+    .location-container{
+        background-color: #040221;
+        height: 150px;
+          border-radius:3px;
+    }
+
+    .event-location{
+        margin: 20px;
+        /* width: 613px; */
+        padding: 10px;
+       
+    }
+
+.location-buttom{
+    display: flex;
+}
+.radio{
+    margin-left:5px;
+    padding: 10px;
+    font-weight: bold;
+}
+.radio input[type='radio']{
+position: absolute;
+opacity: 0;
+}
+
+.radio .content{
+    border: 2px solid red;
+    cursor: pointer;
+    padding: 6px;
+    color: white;
+    width: 100px;
+
+
+  
+}
+
+.radio input[type='radio']:checked + .content{
+   
+    background-color: red;
+} 
+
+
+
+ /* location */
+.venue-search{
+    padding: 10px;
+    background-color: white;
+    position: relative;
+    height: 35px;
+    width: 450px;
+    top: 10px;
+    display: none;
+    
+    
+}
+
+#location-add{
+    width: 400px;
+    border:none;
+    height: 20px;
+    color: rgb(51, 48, 48);
+    margin-left: 25px;
+    outline: none;
+    position: absolute;
+}
+
+#location-add-but{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 11px;
+}
+
+/* Online */
+
+.online-link {
+    padding: 10px;
+    background-color: white;
+    position: relative;
+    height: 35px;
+    width: 450px;
+    top: 10px;
+    display: none;
+
+
+}
+
+#online-add {
+    width: 400px;
+    border: none;
+    height: 20px;
+    color: rgb(51, 48, 48);
+    margin-left: 25px;
+    outline: none;
+    position: absolute;
+}
+
+/* #location-add-but {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 11px;
+} */
+
+
+/* Date and time */
+
+.date-time
+{
+    width: 150px;
+    height: 20px;
+    color: rgb(26, 25, 25);
+    margin:0 4px;
+  
+}
+
+.start-date-time ,.end-date-time
+{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.date-time-container {
+    background-color: #040221;
+    height: 200px;
+    margin-top: 20px;
+      border-radius:3px;
+   
+}
+
+.date-time-container2{
+     margin: 20px;
+     /* width: 613px; */
+     padding: 5px;
+}
+
+
+/* Submit create event form */
+.submitEvent{
+    margin: 20px;
+    /* background-color: #040221; */
+    display: flex;
+    justify-content: center;
+    height: 30px;
+}
+
+#Eventsubmit{
+    background-color: #ff0513;
+    border: none;
+    outline: none;
+    width: 120px;
+    border-radius: 3px;
+    width: 500px;
+    height: 50px;
+}
