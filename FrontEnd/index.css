@@ -130,9 +130,9 @@ header{
  /* information display section  */
 
  #welcomePanel{
-     background: url(images/Stream.jpg) no-repeat center;
+     background: url(../images/Stream.jpg) no-repeat center;
      height: 590px;
-     margin-top: 70px;
+     margin-top: 69px;
      width: 100% 100%;
      background-size: cover;
      text-align: center;

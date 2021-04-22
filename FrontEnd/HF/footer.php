@@ -37,5 +37,5 @@
 
 
     <footer>
-        <p>2021&copy;EventraaGhana</p>
+        <p>2021&copy;RichardsonCodes</p>
     </footer>

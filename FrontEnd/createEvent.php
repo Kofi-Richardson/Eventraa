@@ -37,7 +37,7 @@ require "../FrontEnd/HF/hompageheaader.php"
                 <input type="text" id="event-speaker" name="event-speaker">
 
                 <label for="event-description"><h3>Description</h3></label>
-                <p>Describe your event so those viewing will have a fair idea of what your events is about</p>
+                <p id="event-description-header">Describe your event so those viewing will have a fair idea of what your events is about</p>
                 <textarea name="event-description" id="event-description" cols="30" rows="5"></textarea>
             </div>
 
