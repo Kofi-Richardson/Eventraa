@@ -26,7 +26,7 @@ require "../FrontEnd/HF/hompageheaader.php"
             <h1>EVENT</h1>
         </div>
 
-        <form action="../EventHandler/eventForm.php" method="POST" class="create-event-form">
+        <form action="../EventHandler/eventFormReg.php" method="POST" class="create-event-form">
 
 
             <div class="event-name">

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>Eventraa-Events</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="events.css">
+    <link rel='stylesheet' href='index.css'>
+    <link rel='stylesheet' href='events.css'>
 </head>
 <body>
 
@@ -16,50 +16,67 @@ require './HF/hompageheaader.php'
 
 ?>
 
+<?php
 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
-     <section id="eventcontainer" class="eventpage">
+include '../EventHandler/preview.php';
 
-        <div class="eventHeaders">
+$eventId = $_GET['event'];
+
+$Eventquery = 'SELECT * FROM Events WHERE id = ?';
+$stmt = $connection->prepare($Eventquery);
+$stmt->execute(array($eventId));
+$stmt->setFetchMode(PDO::FETCH_OBJ);
+$res = $stmt->fetch();
+var_dump($res);
+
+if ($stmt->rowCount() == 1) {
+    echo "
+              <section id='eventcontainer' class='eventpage'>
+
+        <div class='eventHeaders'>
                 <button><h1>Live Events</h1></button>
                 <!-- <p>A quick tour of events memories by Eventraa</p> -->
         </div>
 
-         <div class="event-firstgrid event-grids">
+         <div class='event-firstgrid event-grids'>
 
-            <div id="event-rowone" class="event-rows">
+            <div id='event-rowone' class='event-rows'>
 
-                <div id="event-gridone" >
-                   <a href="">
-                       <img src="../images/children.jpg" alt="" width="300">
+                <div id='event-gridone' >
+                   <a href=''>
+                       <img src='$res->IMG_LINK' alt='' width='300'>
                    </a>
-                   <div class="event-grid-details">
+                   <div class='event-grid-details'>
                            <p> Fred's Party </p>
-                            <div id="event-grid-date-time">
-                               date and time
+                            <div id='event-grid-date-time'>
+                               $res->DATE_START .  .$res->TIME_START
                            </div>
                     </div>
                 </div>
 
-                <div id="event-gridone">
-                   <a href="">
-                       <img src="../images/children.jpg" alt="" width="300">
+                <div id='event-gridone'>
+                   <a href=''>
+                       <img src='../images/children.jpg' alt='' width='300'>
                    </a>
-                   <div class="event-grid-details">
+                   <div class='event-grid-details'>
                            <p> Fred's Party </p>
-                            <div id="event-grid-date-time">
+                            <div id='event-grid-date-time'>
                                date and time
                             </div>
                        </div>
                 </div>
 
-                <div id="event-gridone">
-                   <a href="">
-                       <img src="../images/children.jpg" alt="" width="300">
+                <div id='event-gridone'>
+                   <a href=''>
+                       <img src='../images/children.jpg' alt='' width='300'>
                    </a>
-                   <div class="event-grid-details">
+                   <div class='event-grid-details'>
                            <p> Fred's Party </p>
-                           <div id="event-grid-date-time">
+                           <div id='event-grid-date-time'>
                                date and time
                             </div>
                        </div>
@@ -73,49 +90,56 @@ require './HF/hompageheaader.php'
 
 
      </section>
+    "
 
-      <section id="eventcontainer" class="eventpage">
 
-        <div class="eventHeaders">
+    
+?>
+
+
+     
+      <section id='eventcontainer' class='eventpage'>
+
+        <div class='eventHeaders'>
                 <button><h1>Upcoming Events</h1></button>
                 <!-- <p>A quick tour of events memories by Eventraa</p> -->
         </div>
 
-         <div class="event-firstgrid event-grids">
+         <div class='event-firstgrid event-grids'>
 
-            <div id="event-rowone" class="event-rows">
+            <div id='event-rowone' class='event-rows'>
 
-                <div id="event-gridone">
-                   <a href="">
-                       <img src="../images/children.jpg" alt="" width="300">
+                <div id='event-gridone'>
+                   <a href=''>
+                       <img src='../images/children.jpg' alt='' width='300'>
                    </a>
-                   <div class="event-grid-details">
+                   <div class='event-grid-details'>
                            <p> Fred's Party </p>
-                            <div id="event-grid-date-time">
+                            <div id='event-grid-date-time'>
                                date and time
                            </div>
                     </div>
                 </div>
 
-                <div id="event-gridone">
-                    <a href="">
-                       <img src="../images/children.jpg" alt="" width="300">
+                <div id='event-gridone'>
+                    <a href=''>
+                       <img src='../images/children.jpg' alt='' width='300'>
                    </a>
-                   <div class="event-grid-details">
+                   <div class='event-grid-details'>
                            <p> Fred's Party </p>
-                            <div id="event-grid-date-time">
+                            <div id='event-grid-date-time'>
                                date and time
                            </div>
                     </div>
                 </div>
 
-                <div id="event-gridone">
-                    <a href="">
-                       <img src="../images/children.jpg" alt="" width="300">
+                <div id='event-gridone'>
+                    <a href=''>
+                       <img src='../images/children.jpg' alt='' width='300'>
                    </a>
-                   <div class="event-grid-details">
+                   <div class='event-grid-details'>
                            <p> Fred's Party </p>
-                            <div id="event-grid-date-time">
+                            <div id='event-grid-date-time'>
                                date and time
                            </div>
                     </div>

@@ -27,11 +27,15 @@
 }
 
 .E-header-details{
-    margin: 50px;
+    margin: 20px;
 }
 
 .event-details-headers{
     justify-content: space-between;
+}
+
+.Title{
+    font-size: 24px;
 }
 
 .event-details button{
@@ -51,10 +55,11 @@
     color: #ff0513;
 }
 
-.description-container{
+.describtion-container{
      
     display: flex;
     justify-content: center;
+
 }
 
 .event-description{
