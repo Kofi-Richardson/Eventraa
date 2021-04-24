@@ -32,20 +32,20 @@ require '../FrontEnd/HF/hompageheaader.php'
             <div id="Ourservices-rowone" class="Ourservices-rows">
 
                 <div id="Ourservices-gridone">
-                    <img src="images/catering.jpg" alt="" width="300">
+                    <img src="../images/catering.jpg" alt="" width="300">
                    <h4>Food and Beverage </h4>
 
                 </div>
 
                 <div id="Ourservices-gridone">
-                    <img src="images/decoration.jpg" alt="" width="300" height="200px">
+                    <img src="../images/decoration.jpg" alt="" width="300" height="200px">
                     <h4>Decorations </h4>
 
                    </p>
                 </div>
 
                 <div id="Ourservices-gridone">
-                    <img src="images/dj.jpg" alt="" width="300">
+                    <img src="../images/dj.jpg" alt="" width="300">
                     <h4>Music/DJ </h4>
 
                 </div>
@@ -56,19 +56,19 @@ require '../FrontEnd/HF/hompageheaader.php'
              <div id="Ourservices-rowtwo" class="Ourservices-rows">
 
                 <div id="Ourservices-gridone">
-                    <img src="images/Stream.jpg" alt="" width="300">
+                    <img src="../images/Stream.jpg" alt="" width="300">
                    <h4>Video Coverage </h4>
 
                 </div>
 
                 <div id="Ourservices-gridone">
-                    <img src="images/security.jpg" alt="" width="300" height="200px">
+                    <img src="../images/security.jpg" alt="" width="300" height="200px">
                     <h4>Security Services </h4>
 
                 </div>
 
                 <div id="Ourservices-gridone">
-                    <img src="images/ushers.jpg" alt="" width="300">
+                    <img src="../images/ushers.jpg" alt="" width="300">
                     <h4>Ushering</h4>
 
                 </div>

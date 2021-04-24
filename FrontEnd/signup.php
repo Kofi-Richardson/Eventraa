@@ -9,26 +9,11 @@
     <link rel="stylesheet" href="signup.css">
 </head>
 <body>
-         <header>
-        <nav id="navigation">
 
-            <div id="logo" class="navitem">
-                <a href=""><h2>EVENTRAA</h2></a>
-            </div>
+              <?php
+require "./HF/registerationheader.php";
+?>
 
-            <div class="navitem-container">
-                <div id="navlist" class="navitem">
-                    <ul>
-
-
-                    </ul>
-                </div>
-
-
-            </div>
-
-        </nav>
-    </header>
 
 
 

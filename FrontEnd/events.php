@@ -29,9 +29,9 @@ require './HF/hompageheaader.php'
 
             <div id="event-rowone" class="event-rows">
 
-                <div id="event-gridone">
+                <div id="event-gridone" >
                    <a href="">
-                       <img src="images/children.jpg" alt="" width="300">
+                       <img src="../images/children.jpg" alt="" width="300">
                    </a>
                    <div class="event-grid-details">
                            <p> Fred's Party </p>
@@ -49,42 +49,25 @@ require './HF/hompageheaader.php'
                            <p> Fred's Party </p>
                             <div id="event-grid-date-time">
                                date and time
-                        </div>
+                            </div>
                        </div>
                 </div>
 
                 <div id="event-gridone">
                    <a href="">
-                       <img src="images/children.jpg" alt="" width="300">
+                       <img src="../images/children.jpg" alt="" width="300">
                    </a>
                    <div class="event-grid-details">
                            <p> Fred's Party </p>
                            <div id="event-grid-date-time">
                                date and time
-                        </div>
+                            </div>
                        </div>
                 </div>
 
             </div>
 
-            <!-- <div id="rowtwo" class="rows">
 
-                <div id="gridone">
-                    <img src="images/children.jpg" alt="" width="300">
-                    <p>Childrens Party &#x1F389;</p>
-                </div>
-
-                <div id="gridone">
-                    <img src="images/children.jpg" alt="" width="300">
-                    <p>Childrens Party &#x1F389;</p>
-                </div>
-
-                <div id="gridone">
-                    <img src="images/children.jpg" alt="" width="300">
-                    <p>Childrens Party &#x1F389;</p>
-                </div>
-
-            </div> -->
          </div>
 
 
@@ -104,7 +87,7 @@ require './HF/hompageheaader.php'
 
                 <div id="event-gridone">
                    <a href="">
-                       <img src="images/children.jpg" alt="" width="300">
+                       <img src="../images/children.jpg" alt="" width="300">
                    </a>
                    <div class="event-grid-details">
                            <p> Fred's Party </p>
@@ -116,7 +99,7 @@ require './HF/hompageheaader.php'
 
                 <div id="event-gridone">
                     <a href="">
-                       <img src="images/children.jpg" alt="" width="300">
+                       <img src="../images/children.jpg" alt="" width="300">
                    </a>
                    <div class="event-grid-details">
                            <p> Fred's Party </p>
@@ -128,7 +111,7 @@ require './HF/hompageheaader.php'
 
                 <div id="event-gridone">
                     <a href="">
-                       <img src="images/children.jpg" alt="" width="300">
+                       <img src="../images/children.jpg" alt="" width="300">
                    </a>
                    <div class="event-grid-details">
                            <p> Fred's Party </p>
@@ -140,128 +123,14 @@ require './HF/hompageheaader.php'
 
             </div>
 
-            <!-- <div id="rowtwo" class="rows">
 
-                <div id="gridone">
-                    <img src="images/children.jpg" alt="" width="300">
-                    <p>Childrens Party &#x1F389;</p>
-                </div>
-
-                <div id="gridone">
-                    <img src="images/children.jpg" alt="" width="300">
-                    <p>Childrens Party &#x1F389;</p>
-                </div>
-
-                <div id="gridone">
-                    <img src="images/children.jpg" alt="" width="300">
-                    <p>Childrens Party &#x1F389;</p>
-                </div>
-
-            </div> -->
          </div>
 
 
 
      </section>
 
-     <!-- <section class="" id="create-eventBut">
-         <button>
-             <h2 id="createEvent">
-                 Create Event
-             </h2>
-         </button>
-     </section> -->
 
-
-      <!-- <section id="eventtype-container">
-
-        <div class="eventtype-Headers">
-                <button><h1>Event Types</h1></button>
-                <p>A quick tour of events memories by Eventraa</p>
-        </div>
-
-         <div class="eventtype-firstgrid eventtype-grids">
-
-            <div id="eventtype-rowone" class="eventtype-rows">
-
-                <div id="eventtype-gridone">
-                    <img src="../images/children.jpg" alt="" width="300">
-                    <p>Fred's Party </p>
-                </div>
-
-                <div id="eventtype-gridone">
-                    <img src="../images/Conference1.jpg" alt="" width="300" height="200px">
-                    <p>Joshua & Jennifer's</p>
-                </div>
-
-                <div id="eventtype-gridone">
-                    <img src="../images/children.jpg" alt="" width="300">
-                    <p>Childrens Party &#x1F389;</p>
-                </div>
-
-
-            </div>
-
-            <div id="eventtype-rowtwo" class="eventtype-rows">
-
-                <div id="eventtype-gridone">
-                    <img src="images/children.jpg" alt="" width="300">
-                    <p>Childrens Party &#x1F389;</p>
-                </div>
-
-                <div id="eventtype-gridone">
-                    <img src="images/children.jpg" alt="" width="300">
-                    <p>Childrens Party &#x1F389;</p>
-                </div>
-
-                <div id="eventtype-gridone">
-                    <img src="images/children.jpg" alt="" width="300">
-                    <p>Childrens Party &#x1F389;</p>
-                </div>
-
-            </div>
-
-
-             <div id="eventtype-rowtwo" class="eventtype-rows">
-
-                <div id="eventtype-gridone">
-                    <img src="images/children.jpg" alt="" width="300">
-                    <p>Childrens Party &#x1F389;</p>
-                </div>
-
-                <div id="eventtype-gridone">
-                    <img src="images/children.jpg" alt="" width="300">
-                    <p>Childrens Party &#x1F389;</p>
-                </div>
-
-                <div id="eventtype-gridone">
-                    <img src="images/children.jpg" alt="" width="300">
-                    <p>Childrens Party &#x1F389;</p>
-                </div>
-
-            </div>
-
-             <div id="eventtype-rowthree" class="eventtype-rows">
-
-                <div id="eventtype-gridone">
-                    <img src="images/children.jpg" alt="" width="300">
-                    <p>Childrens Party &#x1F389;</p>
-                </div>
-
-                <div id="eventtype-gridone">
-                    <img src="images/children.jpg" alt="" width="300">
-                    <p>Childrens Party &#x1F389;</p>
-                </div>
-
-                <div id="eventtype-gridone">
-                    <img src="images/children.jpg" alt="" width="300">
-                    <p>Childrens Party &#x1F389;</p>
-                </div>
-
-            </div>
-         </div>
-
-     </section> -->
 
 
          <?php require './HF/footer.php'?>

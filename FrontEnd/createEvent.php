@@ -39,6 +39,9 @@ require "../FrontEnd/HF/hompageheaader.php"
                 <label for="event-description"><h3>Description</h3></label>
                 <p id="event-description-header">Describe your event so those viewing will have a fair idea of what your events is about</p>
                 <textarea name="event-description" id="event-description" cols="30" rows="5"></textarea>
+
+                 <label for="event-image-link"><h4>Event Cover image link</h4></label>
+                <input type="text" id="event-image-link" name="event-image-link">
             </div>
 
             <div class="location-container">
@@ -128,7 +131,7 @@ require "../FrontEnd/HF/hompageheaader.php"
                 </div>
 
             <div class="submitEvent">
-            <input type="submit" value="Create Event" id="Eventsubmit">
+            <input type="submit" value="Create Event" id="Eventsubmit" name="Eventsubmit">
             </div>
 
 

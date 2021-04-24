@@ -14,13 +14,15 @@ $date_start = $_POST['start-date'];
 $date_end = $_POST['end-date'];
 $time_start = $_POST['time-start'];
 $time_end = $_POST['time-end'];
+$event_image_link = $_POST['event-image-link'];
 
-$query = "INSERT INTO Events (EVENT_TITLE,EVENT_SPK,EVENT_DES,EVENT_LINK,TIME_START,TIME_END,DATE_START,DATE_END) VALUE(?,?,?,?,?,?,?,?)";
+$query = "INSERT INTO Events (EVENT_TITLE,EVENT_SPK,EVENT_DES,IMG_LINK,EVENT_LINK,TIME_START,TIME_END,DATE_START,DATE_END) VALUE(?,?,?,?,?,?,?,?,?)";
 
 $statement = $connection->prepare($query);
 $statement->execute(array($event_title,
     $event_speaker,
     $event_description,
+    $event_image_link,
     $event_online == 'online' ? $event_online_link : $event_venue,
     $time_start,
     $time_end,

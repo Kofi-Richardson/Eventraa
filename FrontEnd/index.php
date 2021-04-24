@@ -62,13 +62,13 @@ require './HF/hompageheaader.php'
             </div>
 
             <div class="eventimg">
-                <img src="images/children.jpg" alt="" width="400" height="300">
+                <img src="../images/children.jpg" alt="" width="400" height="300">
             </div>
         </div>
 
         <div id="secondevent" class="Stories">
             <div class="eventimg">
-                <img src="images/children.jpg" alt="" width="400" height="300">
+                <img src="../images/children.jpg" alt="" width="400" height="300">
             </div>
 
 
@@ -99,17 +99,17 @@ require './HF/hompageheaader.php'
             <div id="rowone" class="rows">
 
                 <div id="gridone">
-                    <img src="images/children.jpg" alt="" width="300">
+                    <img src="../images/children.jpg" alt="" width="300">
                     <p>Fred's Party </p>
                 </div>
 
                 <div id="gridone">
-                    <img src="images/Conference1.jpg" alt="" width="300" height="200px">
+                    <img src="../images/Conference1.jpg" alt="" width="300" height="200px">
                     <p>Joshua & Jennifer's</p>
                 </div>
 
                 <div id="gridone">
-                    <img src="images/children.jpg" alt="" width="300">
+                    <img src="../images/children.jpg" alt="" width="300">
                     <p>Childrens Party &#x1F389;</p>
                 </div>
 
@@ -118,17 +118,17 @@ require './HF/hompageheaader.php'
             <div id="rowtwo" class="rows">
 
                 <div id="gridone">
-                    <img src="images/children.jpg" alt="" width="300">
+                    <img src="../images/children.jpg" alt="" width="300">
                     <p>Childrens Party &#x1F389;</p>
                 </div>
 
                 <div id="gridone">
-                    <img src="images/children.jpg" alt="" width="300">
+                    <img src="../images/children.jpg" alt="" width="300">
                     <p>Childrens Party &#x1F389;</p>
                 </div>
 
                 <div id="gridone">
-                    <img src="images/children.jpg" alt="" width="300">
+                    <img src="../images/children.jpg" alt="" width="300">
                     <p>Childrens Party &#x1F389;</p>
                 </div>
 
@@ -137,6 +137,6 @@ require './HF/hompageheaader.php'
 
      </section>
 
-<?php require 'footer.php'?>
+<?php require '../FrontEnd/HF/footer.php'?>
 </body>
 </html>
