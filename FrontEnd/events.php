@@ -16,7 +16,21 @@ require './HF/hompageheaader.php'
 
 ?>
 
-<?php
+
+
+
+              <section id='eventcontainer' class='eventpage'>
+
+        <div class='eventHeaders'>
+                <button><h1>Upcoming Events</h1></button>
+                <!-- <p>A quick tour of events memories by Eventraa</p> -->
+        </div>
+
+
+<div class='event-firstgrid event-grids'>
+
+
+ <?php
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
@@ -24,85 +38,60 @@ error_reporting(E_ALL);
 
 include '../EventHandler/preview.php';
 
-$eventId = $_GET['event'];
+include '../EventHandler/preview.php';
 
-$Eventquery = 'SELECT * FROM Events WHERE id = ?';
+$Eventquery = 'SELECT * FROM Events ';
+
 $stmt = $connection->prepare($Eventquery);
-$stmt->execute(array($eventId));
-$stmt->setFetchMode(PDO::FETCH_OBJ);
-$res = $stmt->fetch();
-var_dump($res);
+$stmt->execute();
+$res = $stmt->fetchAll(PDO::FETCH_OBJ);
 
-if ($stmt->rowCount() == 1) {
+foreach ($res as $event) {
     echo "
-              <section id='eventcontainer' class='eventpage'>
 
-        <div class='eventHeaders'>
-                <button><h1>Live Events</h1></button>
-                <!-- <p>A quick tour of events memories by Eventraa</p> -->
-        </div>
 
-         <div class='event-firstgrid event-grids'>
-
+        <a  id='event-preview-link' href='http://localhost/ModernCoursework/FrontEnd/Eventpreview.php?event=$event->Events_id'>
             <div id='event-rowone' class='event-rows'>
 
+
+
                 <div id='event-gridone' >
-                   <a href=''>
-                       <img src='$res->IMG_LINK' alt='' width='300'>
-                   </a>
+
+                       <img src='$event->IMG_LINK' alt='' width='300'>
+
                    <div class='event-grid-details'>
-                           <p> Fred's Party </p>
-                            <div id='event-grid-date-time'>
-                               $res->DATE_START .  .$res->TIME_START
-                           </div>
+                           <p>$event->EVENT_TITLE </p>
+
+                              <p class='event-grid-date-time'> DATE: $event->DATE_START </p>
+                                <p class='event-grid-date-time'>TIME: $event->TIME_START </p>
+
                     </div>
+
+                </div>
                 </div>
 
-                <div id='event-gridone'>
-                   <a href=''>
-                       <img src='../images/children.jpg' alt='' width='300'>
-                   </a>
-                   <div class='event-grid-details'>
-                           <p> Fred's Party </p>
-                            <div id='event-grid-date-time'>
-                               date and time
-                            </div>
-                       </div>
-                </div>
+        </a>
+";
+}
 
-                <div id='event-gridone'>
-                   <a href=''>
-                       <img src='../images/children.jpg' alt='' width='300'>
-                   </a>
-                   <div class='event-grid-details'>
-                           <p> Fred's Party </p>
-                           <div id='event-grid-date-time'>
-                               date and time
-                            </div>
-                       </div>
-                </div>
-
-            </div>
+?>
+</div>
 
 
-         </div>
 
 
 
      </section>
-    "
 
 
-    
-?>
 
 
-     
-      <section id='eventcontainer' class='eventpage'>
+
+   <!-- <section id='eventcontainer' class='eventpage'>
 
         <div class='eventHeaders'>
                 <button><h1>Upcoming Events</h1></button>
-                <!-- <p>A quick tour of events memories by Eventraa</p> -->
+
         </div>
 
          <div class='event-firstgrid event-grids'>
@@ -152,7 +141,7 @@ if ($stmt->rowCount() == 1) {
 
 
 
-     </section>
+     </section> -->
 
 
 

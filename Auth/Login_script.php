@@ -22,7 +22,7 @@ if (isset($email) && isset($password)) {
 
         $statement->setFetchMode(PDO::FETCH_ASSOC);
         $result = $statement->fetch();
-        var_dump($result);
+        //var_dump($result);
         $row_email = $result["email"];
         $row_password = $result["password"];
 

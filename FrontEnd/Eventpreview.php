@@ -26,7 +26,7 @@ include '../EventHandler/preview.php';
 
 $eventId = $_GET['event'];
 
-$Eventquery = 'SELECT * FROM Events WHERE id = ?';
+$Eventquery = 'SELECT * FROM Events WHERE Events_id = ?';
 $stmt = $connection->prepare($Eventquery);
 $stmt->execute(array($eventId));
 $stmt->setFetchMode(PDO::FETCH_OBJ);
@@ -39,7 +39,7 @@ if ($stmt->rowCount() == 1) {
          <div class='event-preview'>
         <div class='event-image-details'>
             <div class='event-image'>
-                    <img src='../images/Conference1.jpg' alt=''height='360px' width='720px'>
+                    <img src='$res->IMG_LINK' alt=''height='360px' width='720px'>
              </div>
 
             <div class='event-details'>
@@ -50,13 +50,34 @@ if ($stmt->rowCount() == 1) {
                     <h6 class='E-header-details'> TIME</h6>
                     <h5 class='E-header-details Title'>  $res->TIME_START- $res->TIME_END</h5>
                 </div>
-                <button type='submit' id='Unregister' onclick='click'>Unregister</button>
-                <button type='submit' id='Register' onclick='click'>Register</button>
+
+                <div class='RegContainer'>
+
+                 <label class='Registration Reg' onclick='click'>
+                 <input value='Register' type='radio' id='register' name='Registeration'>
+                        <div class='content' >
+                            Register
+                        </div>
+            </label>
+
+             <label class='Registration Unreg' onclick='click'>
+                 <input value='UnRegister' type='radio' id='Unregister' name='Registeration'>
+                        <div class='content' >
+                            Unregister
+                        </div>
+            </label>
+
+            <span id='RegistrationCount'> </span>
+                </div>
+
+
 
 
 
             </div>
         </div>
+
+
 
     </div>
     </div>
@@ -84,13 +105,15 @@ if ($stmt->rowCount() == 1) {
 
 
 
-
  <?php
 require './HF/footer.php';
 
 ?>
 
+<script>
 
+
+</script>
 
 </body>
 </html>

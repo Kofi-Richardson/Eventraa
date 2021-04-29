@@ -59,7 +59,7 @@ if (isset($_SESSION['error'])) {
                 <div class="logininput">
                     <label for="Password">Password</label>
                     <input type="password" name="Password">
-                    <a href="" id="">Forgotten password? </a>
+                    <a href="signup.php" id="">Dont Have An Account? Signup</a>
                 </div>
 
                 <div class="login-submit-button">

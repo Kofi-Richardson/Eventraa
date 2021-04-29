@@ -1,6 +1,6 @@
 #signup-dialogue {
     background-color: white;
-    height: 710px;
+    height: 755px;
     margin: 90px;
     margin-left: 150px;
     margin-right: 150px;
@@ -111,9 +111,12 @@
 }
 
 #password-error-check{
-    height: 30px;
-    width: 200px;
-    background-color: #f3f3f3;
+    margin: 20px;
+    height: 40px;
+    width: 427px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
 
 }
 
@@ -157,4 +160,34 @@
     border: none;
     padding: 10px;
     border-radius: 5px;
+}
+
+@media screen and (max-width:390px) {
+
+    .side-image {
+        display: none;
+    }
+
+    #signup-dialogue {
+        width: 300px;
+        margin-left: 20px;
+        margin-right: 20px;
+        left: 20px;
+    }
+
+    .buttonBox h1 {
+        font-size: 16px;
+    }
+
+    .signupinput label {
+        font-size: 14px;
+    }
+
+    .Auth-Submit {
+        font-size: 16px;
+    }
+
+    .panel {
+        width: 300px;
+    }
 }

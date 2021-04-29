@@ -81,6 +81,10 @@
     background-color: transparent;
     outline: none;
     margin-top: 5px;
+    /* width: 500px; */
+}
+
+.create-input{
     width: 500px;
 }
 
@@ -102,6 +106,8 @@
 .location-buttom{
     display: flex;
 }
+
+
 .radio{
     margin-left:5px;
     padding: 10px;
@@ -256,4 +262,37 @@ opacity: 0;
     border-radius: 3px;
     width: 500px;
     height: 50px;
+}
+
+@media screen and (max-width:390px)
+{
+    .create-event-aside{
+        display: none;
+    }
+
+    .create-event-content{
+        width: 300px;
+        margin: 0;
+        margin-top: 70px;
+    }
+
+    .create-event-form{
+        width: 330px;
+    }
+    .create-input{
+        width: 290px;
+    }
+    .date-time-container{
+        height: 400px;
+    }
+
+    .start-date-time,.end-date-time{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .start-time,.start-date,.end-time,.end-date{
+       align-items: center;
+       margin: 10px;
+    }
 }

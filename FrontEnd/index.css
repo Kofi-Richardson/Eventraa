@@ -67,7 +67,17 @@ header{
 {
     display: flex;
     background-color: #ff0513;
+    font-weight: bolder;
     
+}
+
+#log:hover{
+   
+    border-bottom: none;
+
+}
+.min-m{
+    display: none;
 }
 
 
@@ -115,6 +125,8 @@ header{
     height: 40px;
     width: 150px;
     display: none;
+    z-index: 2;
+   position:fixed;
    
 }
 
@@ -311,4 +323,149 @@ footer{
     border-radius: 5px;
    
     
+}
+
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1000px){
+
+  
+
+    #welcometext,#eventgh{
+        left: 10rem;
+      
+    }
+    .navitem-container{
+        margin-left: 40px;
+    }
+
+}
+
+@media screen and (max-width: 390px){
+
+      .max {
+          display: none;
+      }
+
+      .min {
+          display: block;
+      }
+
+      .userdash{
+          left: 60%;
+      }
+
+      #back{
+          position: absolute;
+          top: 30%;
+          left: 83%;
+
+      }
+    #welcometext,#logo h2{
+        font-size: 16px;
+        left: 1.5rem;
+    }
+
+
+    #welcomePanel{
+        width: 390px;
+    }
+
+    #logo{
+        width: 100px;
+    }
+
+
+    .navitem-container{
+        margin-left: 80px;
+    }
+
+    .navitem ul{
+        font-size: 16px;
+    }
+
+    .sectionHeaders button{
+        font-size: 16px;
+    }
+
+    .sectionHeaders p{
+        font-size: 14px;
+    }
+
+    .Stories{
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+        justify-content: center;
+    }
+.eventinfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+}
+    .eventinfo button h2{
+        font-size: 16px;
+    }
+
+    .eventinfo p{
+        font-size: 14px;
+        margin: 30px;
+    }
+
+    .eventimg{
+        width: 350px;
+        display: flex;
+        justify-content: center;
+    }
+    .eventimg img{
+        width: 300px;
+    }
+
+    #gridone{
+        display: flex;
+        flex-direction: column;
+        margin-right: 14px;
+        width: 300px;
+
+    }
+    .grids{
+        margin: 20px;
+    }
+
+    .rows{
+        flex-direction: column;
+        justify-content: center;
+        width: 300px;
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+
+    #footerinfo{
+        font-size: 12px;
+        padding: 20px;
+    }
+
+    #footerlogo button{
+        width: 120px;
+    }
+
+     #footerlogo button h1{
+         font-size: 16px;
+     }
+
+     .footernav{
+         flex-direction: column;
+     }
+     .socials{
+         flex-direction: row;
+     }
+
+      .footernav hr{
+          height: 1px;
+      }
 }

@@ -18,7 +18,7 @@
             <li><a href="">@_richardsonkofi</a></li>
         </ul>
 
-        <ul class="footernav">
+        <ul class="footernav socials">
 
             <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24"><defs><style>.cls-1{fill:none;stroke:white;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;}</style></defs><g id="ic-social-facebook"><rect class="cls-1" x="3" y="3" width="18" height="18" rx="6"/><path class="cls-1" d="M12,20.89v-10a4,4,0,0,1,4-4h0"/><line class="cls-1" x1="9.03" y1="13" x2="15.03" y2="13"/></g></svg></a></li>
 

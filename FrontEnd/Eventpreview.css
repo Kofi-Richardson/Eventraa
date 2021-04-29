@@ -38,7 +38,7 @@
     font-size: 24px;
 }
 
-.event-details button{
+/* .event-details button{
     position:absolute;
     width: 250px;
     height: 40px;
@@ -47,13 +47,46 @@
     background-color: #ff0513;
     border: none;
     border-radius: 3px;
+    font-weight: bolder;
+} */
+
+.RegContainer{
+    display: flex;
 }
 
-.event-details button:hover{
+/* .event-details button:hover{
   
     background-color: white;
     color: #ff0513;
+} */
+
+.Registration{
+    margin-left: 5px;
+    padding: 10px;
+    font-weight: bold;
 }
+
+.Registration input[type='radio'] {
+    position: absolute;
+    opacity: 0;
+}
+
+.Registration .content {
+    border: 2px solid red;
+    cursor: pointer;
+    padding: 6px;
+    color: white;
+    width: 100px;
+
+
+
+}
+
+.Registration input[type='radio']:checked+.content {
+
+    background-color: red;
+}
+
 
 .describtion-container{
      

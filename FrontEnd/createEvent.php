@@ -31,17 +31,17 @@ require "../FrontEnd/HF/hompageheaader.php"
 
             <div class="event-name">
                 <label for="event-title"><h3>Event title</h3></label>
-                <input type="text" id="event-title" name="event-title">
+                <input type="text" id="event-title" class="create-input" name="event-title">
 
                 <label for="event-speaker"><h3>Event Speaker</h3></label>
-                <input type="text" id="event-speaker" name="event-speaker">
+                <input type="text" id="event-speaker" class="create-input" name="event-speaker">
 
                 <label for="event-description"><h3>Description</h3></label>
                 <p id="event-description-header">Describe your event so those viewing will have a fair idea of what your events is about</p>
-                <textarea name="event-description" id="event-description" cols="30" rows="5"></textarea>
+                <textarea name="event-description" id="event-description"class="create-input" cols="30" rows="5"></textarea>
 
                  <label for="event-image-link"><h4>Event Cover image link</h4></label>
-                <input type="text" id="event-image-link" name="event-image-link">
+                <input type="text" id="event-image-link" class="create-input"name="event-image-link">
             </div>
 
             <div class="location-container">

@@ -73,7 +73,7 @@ require "./HF/registerationheader.php";
                  <div class="signup-input">
                     <label for="confirmPassword">Confirm password</label>
                     <input type="password" name="confirmPassword" id="confirmPassword" onkeyup="check();" >
-                    <!-- <a href="">Forgotten password?</a> -->
+                    <a href="login.php">Already have an account? Login</a>
 
                 </div>
 

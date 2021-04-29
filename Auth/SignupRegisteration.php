@@ -1,7 +1,13 @@
 <?php
-require_once './connection.php';
+session_start();
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+require_once __DIR__ . '/connection.php';
 //getting http post from signup page
-if (isset($_POST['Signup'])) {
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $name = $_POST['username'];
     $email = $_POST['email'];
     $password = $_POST['password'];
@@ -15,11 +21,12 @@ if (isset($_POST['Signup'])) {
         if (isset($name) && isset($email) && isset($password) && isset($contact)) {
             $encrypted_password = md5($password);
 
-            $query = "INSERT INTO Users(username,email,password,contact) VALUES('$name','$email','$encrypted_password','$contact')";
-            $statement = $conn->prepare($query);
+            $query = "INSERT INTO Users(username,email,contact,password) VALUES('$name','$email','$contact','$encrypted_password')";
+            $statement = $connection->prepare($query);
             $statement->execute();
+            var_dump($statement);
 
-            header("Location:../FrontEnd/homepage.php");
+            header("Location:../FrontEnd/login.php");
 
         }
 

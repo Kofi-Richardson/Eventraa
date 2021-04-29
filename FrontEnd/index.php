@@ -25,30 +25,31 @@ require './HF/hompageheaader.php'
         <div id="welcometext">
              <h1>WELCOME TO EVENTRAA</h1>
              <p>Life is an event.Make it memorable</p>
+
         </div>
 
-        <div id="eventsearchbar">
+        <!-- <div id="eventsearchbar">
             <input id="eventsearch" type="text" placeholder="    Search for an event...">
 
             <button id="searchbut"><svg xmlns="http://www.w3.org/2000/svg" height="32"viewBox="0 0 24 24"><defs><style>.cls-1{fill:none;stroke:rgb(255, 255, 255);stroke-linecap:round;stroke-linejoin:bevel;stroke-width:1.5px;}</style></defs><g id="ic-actions-search"><circle class="cls-1" cx="13.79" cy="10.15" r="7"/><line class="cls-1" x1="8.91" y1="15.17" x2="4.03" y2="20.05"/></g></svg>
             </button>
 
-        </div>
+        </div> -->
 
-        <div id="eventgh">
-            <h2>Event Management Platform in Ghana </h2>
-        </div>
+        <!-- <div id="eventgh">
+
+        </div> -->
 
 
     </section>
 
 
 
-    <section id="succesStories">
+    <!-- <section id="succesStories">
 
         <div class="sectionHeaders">
             <button><h1>Our Sucess Stories</h1></button>
-            <!-- <p>A quick tour of events memories by Eventraa</p> -->
+
         </div>
 
         <div id="firstevent" class="Stories">
@@ -86,7 +87,7 @@ require './HF/hompageheaader.php'
     </section>
 
 
-     <!-- the gallery section  -->
+
      <section id="gallerycontainer">
 
         <div class="sectionHeaders">
@@ -133,9 +134,11 @@ require './HF/hompageheaader.php'
                 </div>
 
             </div>
-         </div>
+         </div> -->
 
      </section>
+
+
 
 <?php require '../FrontEnd/HF/footer.php'?>
 </body>

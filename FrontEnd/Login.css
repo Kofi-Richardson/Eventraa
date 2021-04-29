@@ -147,3 +147,33 @@
     padding: 10px;
     border-radius: 5px;
 }
+
+
+@media screen and (max-width:390px)
+{
+
+    .side-image{
+        display: none;
+    }
+ #Login-dialogue{
+     width: 300px;
+     margin-left: 20px;
+     margin-right: 20px;
+     left: 20px;
+ }
+ .buttonBox h1{
+     font-size: 16px;
+ }
+
+ .logininput label{
+     font-size: 14px;
+ }
+
+ .Auth-Submit{
+     font-size: 16px;
+ }
+
+ .panel{
+     width: 300px;
+ }
+}
