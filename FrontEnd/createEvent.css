@@ -286,13 +286,27 @@ opacity: 0;
         height: 400px;
     }
 
+    
+
     .start-date-time,.end-date-time{
         flex-direction: column;
         justify-content: center;
     }
 
+    .start-date-time label,.end-date-time label{
+        margin-top: 10px;
+    }
+
     .start-time,.start-date,.end-time,.end-date{
        align-items: center;
        margin: 10px;
+       margin-top: 10px;
+     
+
+
+    }
+
+    .date-time-container2 input{
+        text-align: center;
     }
 }

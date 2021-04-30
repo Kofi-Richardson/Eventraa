@@ -103,7 +103,11 @@ if ($stmt->rowCount() == 1) {
 
 ?>
 
+        <form action="" method="POST">
+            <input type="hidden" name='$eventId' >
+            <button type="submit"></button>
 
+        </form>
 
  <?php
 require './HF/footer.php';

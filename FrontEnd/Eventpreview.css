@@ -9,7 +9,7 @@
 .event-preview{
     height: 360px;
     width: 1080px;
-    background-color: #040221;
+   
  
     
 }
@@ -24,6 +24,7 @@
     padding: 10px;
     position: relative;
     width: 360px;
+     background-color: #040221;
 }
 
 .E-header-details{
@@ -109,3 +110,37 @@
 
 
 
+
+@media screen and (max-width: 390px) {
+    
+ 
+.event-details{
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    left: -1px;
+    top: 20px;
+}
+    .event-preview{
+        width: 320px;
+    }
+ .event-image img{
+     
+     width:320px;
+ }
+
+ 
+
+ .event-image-details{
+
+        flex-direction: column;
+        justify-content: center;
+        
+ }
+
+ .event-description{
+     margin-top: 350px;
+ }
+}
