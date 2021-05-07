@@ -86,6 +86,9 @@ if ($stmt->rowCount() == 1) {
                     <h5 class='E-header-details Title'> $res->DATE_START </h5>
                     <h6 class='E-header-details'> TIME</h6>
                     <h5 class='E-header-details Title'>  $res->TIME_START- $res->TIME_END</h5>
+                     <h6 class='E-header-details'>EVENT LOCATION</h6>
+                     <p class='E-header-details Title'> $res->EVENT_LINK</p>
+
                 </div>
 
 

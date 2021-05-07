@@ -8,7 +8,7 @@ $email = $_POST['email'];
 $password = $_POST['Password'];
 $error = "Username or password invalid ";
 
-//checking if user entered password in order to give him or her a go ahead
+//checking if user entered correct password and email in order to give him or her a go ahead
 
 if (isset($email) && isset($password)) {
     $password_hash = md5($password);
@@ -36,9 +36,7 @@ if (isset($email) && isset($password)) {
             unset($_SESSION['error']);
             $_SESSION['Email'] = $email;
             $_SESSION['ID'] = $row_id;
-            // var_dump($result);
-            var_dump($_SESSION);
-            // die();
+
             header("Location: ../FrontEnd/homepage.php");
         } else {
             //  echo 'theres an error';

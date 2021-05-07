@@ -6,6 +6,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 require_once __DIR__ . '/connection.php';
+
 //getting http post from signup page
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $name = $_POST['username'];
@@ -24,7 +25,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             $query = "INSERT INTO Users(username,email,contact,password) VALUES('$name','$email','$contact','$encrypted_password')";
             $statement = $connection->prepare($query);
             $statement->execute();
-            var_dump($statement);
 
             header("Location:../FrontEnd/login.php");
 

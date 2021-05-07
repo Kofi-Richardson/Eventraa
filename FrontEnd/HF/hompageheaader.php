@@ -34,7 +34,6 @@ if (!isset($_SESSION['Email'])) {
 
 
 
-                            <li class="max"><a href="ourservices.php">Our Services</a></li>
 
 
 
