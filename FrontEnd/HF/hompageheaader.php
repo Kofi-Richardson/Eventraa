@@ -63,8 +63,10 @@ if (!isset($_SESSION['Email'])) {
     <div class="userdash"  >
     <div class="dash-display" id="logout">
         <ul>
-        <a   href="logout.php"><li>Logout</li></a>
+
         <a   href="EventManage.php"><li>Manage Events</li></a>
+         <a   href="logout.php"><li>Logout</li></a>
+
 
         </ul>
     </div>
