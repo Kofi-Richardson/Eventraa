@@ -31,7 +31,6 @@ if (!isset($_SESSION['Email'])) {
     echo '
                             <li class="max min "><a href="events.php">Events</a></li>
 
-                             <li class="max"><a href="ourprojects.php">Our Projects</a></li>
 
 
 
@@ -66,6 +65,7 @@ if (!isset($_SESSION['Email'])) {
     <div class="dash-display" id="logout">
         <ul>
         <a   href="logout.php"><li>Logout</li></a>
+        <a   href="EventManage.php"><li>Manage Events</li></a>
 
         </ul>
     </div>

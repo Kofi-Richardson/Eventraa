@@ -61,33 +61,46 @@
     color: #ff0513;
 } */
 
-.Registration{
-    margin-left: 5px;
-    padding: 10px;
-    font-weight: bold;
+
+    .RegBut{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .RegBut button:hover{
+       background-color: white;
+       color: #ff0513
+       ;
+    }
+.RegBut button{
+    width: 200px;
+    height: 35px;
+    background-color: #ff0513;
+    border: none;
+    border-radius: 3px;
+    font-weight: bolder;
 }
 
-.Registration input[type='radio'] {
-    position: absolute;
-    opacity: 0;
-}
+ .UnregBut {
+     display: flex;
+     justify-content: center;
+     margin-top: 29px;
+ }
 
-.Registration .content {
-    border: 2px solid red;
-    cursor: pointer;
-    padding: 6px;
-    color: white;
-    width: 100px;
+ .UnregBut button:hover {
+     background-color: white;
+     color: #ff0513;
+ }
 
-
-
-}
-
-.Registration input[type='radio']:checked+.content {
-
-    background-color: red;
-}
-
+ .UnregBut button {
+     width: 200px;
+     height: 35px;
+     background-color: #ff0513;
+     border: none;
+     border-radius: 3px;
+     font-weight: bolder;
+ }
 
 .describtion-container{
      

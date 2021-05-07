@@ -1,0 +1,13 @@
+
+.Regdata{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: #040221;
+   
+}
+
+
+.Regdata td{
+     padding: 20px;
+}

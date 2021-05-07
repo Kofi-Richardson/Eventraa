@@ -11,8 +11,9 @@
 <body>
 
        <!-- Header of the page  -->
+
 <?php
-require './HF/hompageheaader.php'
+require './HF/hompageheaader.php';
 
 ?>
 
@@ -35,8 +36,6 @@ require './HF/hompageheaader.php'
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
-
-include '../EventHandler/preview.php';
 
 include '../EventHandler/preview.php';
 

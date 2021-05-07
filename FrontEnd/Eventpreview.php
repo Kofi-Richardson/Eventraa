@@ -11,13 +11,22 @@
 <body>
 
 <?php
+
+session_start();
+
+?>
+
+<?php
 require './HF/hompageheaader.php';
+require_once '../Auth/connection.php';
+
 ?>
 
 
 
 <?php
 
+// display errors
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
@@ -26,11 +35,34 @@ include '../EventHandler/preview.php';
 
 $eventId = $_GET['event'];
 
+//Taking data from the events table to  preview on the website
+
 $Eventquery = 'SELECT * FROM Events WHERE Events_id = ?';
 $stmt = $connection->prepare($Eventquery);
 $stmt->execute(array($eventId));
 $stmt->setFetchMode(PDO::FETCH_OBJ);
 $res = $stmt->fetch();
+
+$qRes = "SELECT * FROM Registration_data WHERE Reg_user_id = ? AND Reg_event_id = ?";
+$stmtQ = $connection->prepare($qRes);
+$stmtQ->execute(array($_SESSION['ID'], $eventId));
+$hasRegistered = $stmtQ->rowCount() > 0;
+
+$regHTML = null;
+
+if (!$hasRegistered) {
+    $regHTML = "<form action='../EventHandler/Regcount.php' method='POST' class='RegBut' >
+            <input type='hidden'name='eventId' value='$eventId'>
+            <button type='submit'  id='Register'>Register</button>
+
+        </form>";
+} else {
+    $regHTML = "<form action='../EventHandler/Regcount.php' method='POST' class='UnregBut' >
+            <input type='hidden'name='eventId' value='$eventId'>
+            <button type='submit'  id='Register'>Unregister </button>
+
+        </form>";
+}
 
 if ($stmt->rowCount() == 1) {
 
@@ -51,30 +83,11 @@ if ($stmt->rowCount() == 1) {
                     <h5 class='E-header-details Title'>  $res->TIME_START- $res->TIME_END</h5>
                 </div>
 
-                <div class='RegContainer'>
-
-                 <label class='Registration Reg' onclick='click'>
-                 <input value='Register' type='radio' id='register' name='Registeration'>
-                        <div class='content' >
-                            Register
-                        </div>
-            </label>
-
-             <label class='Registration Unreg' onclick='click'>
-                 <input value='UnRegister' type='radio' id='Unregister' name='Registeration'>
-                        <div class='content' >
-                            Unregister
-                        </div>
-            </label>
-
-            <span id='RegistrationCount'> </span>
-                </div>
 
 
+       " . $regHTML .
 
-
-
-            </div>
+        " </div>
         </div>
 
 
@@ -103,21 +116,14 @@ if ($stmt->rowCount() == 1) {
 
 ?>
 
-        <form action="" method="POST">
-            <input type="hidden" name='$eventId' >
-            <button type="submit"></button>
 
-        </form>
 
  <?php
 require './HF/footer.php';
 
 ?>
 
-<script>
 
-
-</script>
 
 </body>
 </html>

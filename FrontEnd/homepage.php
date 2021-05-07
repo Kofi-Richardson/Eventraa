@@ -131,7 +131,7 @@ foreach ($res as $event) {
      <!-- the gallery section  -->
      <section id='gallerycontainer'>
 
-        <div class='sectionHeaders'>
+        <!-- <div class='sectionHeaders'>
                 <button><h1>Gallery</h1></button>
                 <p>A quick tour of events memories by Eventraa</p>
         </div>
@@ -175,7 +175,7 @@ foreach ($res as $event) {
                 </div>
 
             </div>
-         </div>
+         </div> -->
 
      </section>
 
