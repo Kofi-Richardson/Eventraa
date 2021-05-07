@@ -28,6 +28,8 @@ include __DIR__ . '/../Auth/connection.php';
 
 include '../EventHandler/preview.php';
 
+// Displaying Data of registerd users for a specific event for the admin
+
 $Eventquery = 'SELECT * FROM Registration_data ';
 
 $eId = $_GET['eventId'];
@@ -46,12 +48,9 @@ $ress = $stmtD->fetchAll(PDO::FETCH_OBJ);
 $stmt->execute();
 $res = $stmt->fetchAll(PDO::FETCH_OBJ);
 
-foreach ($ress as $reservation) {
-    echo "
+?>
 
-
-
-        <table  class='Regdata'>
+ <table  class='Regdata'>
 
         <tr>
             <td rowspan='1'> <h3>List of attendes<h3> <td>
@@ -62,12 +61,21 @@ foreach ($ress as $reservation) {
                 <td><h4>Contact</h4></td>
         </tr>
 
+        <?php
+
+foreach ($ress as $reservation) {
+    echo "
+
+
+
+
+
         <tr>
 
                 <td>{$reservation->email}</td>
-                <td>{$reservation->contact}</td>
+                <td>+233{$reservation->contact}</td>
         </tr>
-</table>
+
 
 
 
@@ -76,6 +84,8 @@ foreach ($ress as $reservation) {
 }
 
 ?>
+
+</table>
 
 
 

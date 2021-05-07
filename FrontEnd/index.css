@@ -28,8 +28,8 @@ html{
 header{
     background-color: #040221;
     padding: 12px;
-    position: sticky;
-    /* z-index: 1400; */
+    position: fixed;
+    z-index: 1400;
     width: 100%;
     top: 0;
     /* backdrop-filter: blur(25rem); */

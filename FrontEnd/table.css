@@ -1,6 +1,8 @@
 
+/* stylying reg dat table */
 .Regdata{
-    margin: 50px;
+    margin-top: 80px;
+    /* margin: 50px; */
     display: flex;
     justify-content: center;
     background-color: #040221;

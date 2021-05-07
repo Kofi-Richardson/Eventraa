@@ -31,6 +31,8 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
+// displaying more details about the event when an event card is clicked
+
 include '../EventHandler/preview.php';
 
 $eventId = $_GET['event'];
@@ -49,6 +51,7 @@ $stmtQ->execute(array($_SESSION['ID'], $eventId));
 $hasRegistered = $stmtQ->rowCount() > 0;
 
 $regHTML = null;
+//  checking if a user is registered or not
 
 if (!$hasRegistered) {
     $regHTML = "<form action='../EventHandler/Regcount.php' method='POST' class='RegBut' >
@@ -63,6 +66,8 @@ if (!$hasRegistered) {
 
         </form>";
 }
+
+// displaying the event preview
 
 if ($stmt->rowCount() == 1) {
 

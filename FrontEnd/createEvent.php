@@ -26,6 +26,9 @@ require "../FrontEnd/HF/hompageheaader.php"
             <h1>EVENT</h1>
         </div>
 
+        <!-- form for the creating events  -->
+
+
         <form action="../EventHandler/eventFormReg.php" method="POST" class="create-event-form">
 
 
@@ -150,7 +153,7 @@ require './HF/footer.php';
 
 
 
-
+ <!-- //script to check if a users event is online or has a venue location  -->
 
 
     <script >

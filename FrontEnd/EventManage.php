@@ -35,6 +35,8 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
+// Displaying Events created by the user or admin
+
 include '../EventHandler/preview.php';
 // session_start();
 
